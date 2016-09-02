@@ -7,13 +7,13 @@ Meaning: need to extract 500 signals for each sample. A naïve Preparation will 
 
 Further observation shows that after cleaning the data it is sometimes easy to count the steps manually based on the plot of either x, y or z. Here we see the plots for session 3, which had 15 steps:
 
-![](https://github.com/ranf/data-science-gait/blob/master/Images/session.3.x.png)
-![](https://github.com/ranf/data-science-gait/blob/master/Images/session.3.y.png)
-![](https://github.com/ranf/data-science-gait/blob/master/Images/session.3.z.png)
+![](https://github.com/ranf/data-science-gait/raw/master/Images/session.3.x.png)
+![](https://github.com/ranf/data-science-gait/raw/master/Images/session.3.y.png)
+![](https://github.com/ranf/data-science-gait/raw/master/Images/session.3.z.png)
 
 Comparing session 3 with session 2 plot (below), which had a similar number of steps, but lower distance, reveals several extreme observations on session 3 had significant effect on the distance:
 
-![](https://github.com/ranf/data-science-gait/blob/master/Images/session.2.z.png)
+![](https://github.com/ranf/data-science-gait/raw/master/Images/session.2.z.png)
 
 It is also important to notice that while the number of steps is almost always between 15 and 22, the distance varies between 5 and 20. Considering the final error calculation (MSE, which emphasizes larger errors), it means the distance estimation is much more risky than the step count estimation, and it is crucial to identify edge cases (100 errors of 1 == 11 errors of 3 == 1 error of 10).
 
@@ -45,4 +45,4 @@ Manual tuning of the algorithms sigma/cost/degree did not improve the results ob
 
 The model was trained on 25 sessions using LOOCV, and tested on the remaining 5 sessions. Once results were good the 5 test samples were changed. The model was also evaluated using 5 edge case sessions to ensure its behavior against any set.
 
-![](https://github.com/ranf/data-science-gait/blob/master/Images/edge_results.PNG)
+![](https://github.com/ranf/data-science-gait/raw/master/Images/edge_results.PNG)
