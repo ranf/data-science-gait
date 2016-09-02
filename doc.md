@@ -45,4 +45,4 @@ Manual tuning of the algorithms sigma/cost/degree did not improve the results ob
 
 The model was trained on 25 sessions using LOOCV, and tested on the remaining 5 sessions. Once results were good the 5 test samples were changed. The model was also evaluated using 5 edge case sessions to ensure its behavior against any set.
 
-![](https://github.com/ranf/data-science-gait/blob/master/Images/edge_results.png)
+![](https://github.com/ranf/data-science-gait/blob/master/Images/edge_results.PNG)
