@@ -13,7 +13,7 @@ Further observation shows that after cleaning the data it is sometimes easy to c
 
 Comparing session 3 with session 2 plot (below), which had a similar number of steps, but lower distance, reveals several extreme observations on session 3 had significant effect on the distance:
 
-![](session.2.z.png)
+![](https://github.com/ranf/data-science-gait/blob/master/Images/session.2.z.png)
 
 It is also important to notice that while the number of steps is almost always between 15 and 22, the distance varies between 5 and 20. Considering the final error calculation (MSE, which emphasizes larger errors), it means the distance estimation is much more risky than the step count estimation, and it is crucial to identify edge cases (100 errors of 1 == 11 errors of 3 == 1 error of 10).
 
